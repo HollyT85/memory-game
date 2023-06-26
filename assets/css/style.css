@@ -1,0 +1,42 @@
+* {
+    border: 0;
+    padding: 0;
+}
+
+body {
+    background: radial-gradient(#080404, #040c04)
+}
+
+.title {
+    font-family: 'Permanent Marker', cursive;
+    color: #41a41e;
+    text-align: center;
+    font-size: 7em;
+    border: 0;
+    margin:0;
+}
+
+
+
+.timer, .turns {
+    color: #b2cc45;
+    font-family: 'Caveat', cursive;
+    font-size: 2em;
+}
+
+/* #070a14 #040c04   */
+
+.card {
+    background-color: #070a14;
+    height: 200px;
+    width: 150px;
+    border-radius: 10%;
+    margin: 5px;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    margin: auto;
+    width: 75%;
+}
