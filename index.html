@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Match the Dinosaurs</title>
+    <title>Match Nothing</title>
     <!--Google Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,33 +21,40 @@
 
 </head>
 <body>
-    <h1 class="title">Dinosaurs - Roar </h1>
-    <div class="info-container">
-        <div class="timer">
-            <i class="fa-regular fa-clock"></i>: <span id="time-remaining">100</span>
+    <h1 class="title">Matchy Match</h1>
+    <!--Home Page Code-->
+    <div id="homePage" class="">
+        <div>
+            Welcome to this very boring matching game. You will hate it. That's fine. The matching is all about luck. There is no skill or memory involved.
         </div>
-        <div class="turns">
-            Turns Taken: <span id="turns-taken">0</span>
-        </div>
-    <div class="game-container">
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+        <button type="button" id="startGameButton">Start Game</button>
     </div>
 
+    <!--Game Page Code-->
+    <div id="gamePage" class="hide">
+        <div class="timer" id="timer">
+            <i class="fa-regular fa-clock"></i>: <span id="time-remaining">100</span>
+        </div>
+        <div class="turns" id="turns">
+            Turns Taken: <span id="turns-taken">0</span>
+        </div>
+        <div class="card-area">
+            <div class="card">
+                <div class="card__side card__side__front" id="cardFront">
+                </div>
+                <div class="card">
+                    <div class="card__side card__side__back" id="cardBack">
+                    </div>
+                </div>
+            </div>
+        </div>
 
+    <!--Finished Game Page-->
+    <div id="endPage" class="hide">
+        You have finished. 
+    </div>
+
+    <!--JS-->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

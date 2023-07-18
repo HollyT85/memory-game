@@ -4,14 +4,14 @@
 }
 
 body {
-    background: radial-gradient(#080404, #040c04)
+    background: radial-gradient(#d6c3c3, #e8b4d6)
 }
 
 .title {
     font-family: 'Permanent Marker', cursive;
-    color: #41a41e;
+    color: #7c1ea4;
     text-align: center;
-    font-size: 7em;
+    font-size: 5em;
     border: 0;
     margin:0;
 }
@@ -19,22 +19,32 @@ body {
 
 
 .timer, .turns {
-    color: #b2cc45;
+    color: #7c1ea4;
     font-family: 'Caveat', cursive;
     font-size: 2em;
 }
 
-/* #070a14 #040c04   */
+/* Card*/
 
 .card {
-    background-color: #070a14;
+    background-color: #0c33a7;
     height: 200px;
     width: 150px;
     border-radius: 10%;
     margin: 5px;
 }
 
-.game-container {
+
+
+/* Hide */
+
+.hide {
+    display: none;
+}
+
+/*Different Page Areas*/
+
+.card-area {
     display: grid;
     grid-template-columns: repeat(4, auto);
     margin: auto;
